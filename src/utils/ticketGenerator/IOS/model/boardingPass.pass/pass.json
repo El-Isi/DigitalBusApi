@@ -1,0 +1,135 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.com.isidropass",
+  "serialNumber": "123456789ABCd",
+  "teamIdentifier": "2RHJPMVX69",
+  "webServiceURL": "https://example.com/passes/",
+  "authenticationToken": "Rcui8biNmzK0AU6ffm8jGO1D7YAkeFj9FGt8Qadav.",
+  "relevantDate": "2024-04-04T13:00-06:00",
+  "locations": [
+    {
+      "longitude": -103.349609,
+      "latitude": 20.672037,
+      "relevantText": "Estación de salida Guadalajara"
+    }
+  ],
+  "barcode": {
+    "message": "123456789ABC",
+    "format": "PKBarcodeFormatQR",
+    "messageEncoding": "iso-8859-1"
+  },
+  "organizationName": "Autobuses de La Piedad, S.A. de C.V.",
+  "description": "Pase de abordaje de autotransportes",
+  "logoText": "Autobuses de La Piedad, S.A. de C.V.",
+  "foregroundColor": "rgb(22, 55, 110)",
+  "backgroundColor": "rgb(50, 91, 185)",
+  "boardingPass":{
+    "transitType": "PKTransitTypeBus",
+    "headerFields": [
+      {
+        "value": "Vigente",
+        "label": "Estatus",
+        "key": "status"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "value": "Isidro Fernando Gonzalez Gomez",
+        "label": "Nombre",
+        "changeMessage": "El nombre se ha cambiado a: %@",
+        "key": "name"
+      },
+      {
+        "value": "elmasbarbaroiiii@gmail.com",
+        "label": "Email",
+        "key": "email"
+      }
+    ],
+    "primaryFields": [
+      {
+        "value": "GDL",
+        "key": "origin",
+        "label": "Origen"
+      },
+      {
+        "value": "MZT",
+        "key": "destination",
+        "label": "Destino"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "value": "9",
+        "label": "Asiento",
+        "textAlignment": "PKTextAlignmentCenter",
+        "key": "seat"
+      },
+      {
+        "value": "13",
+        "label": "Andén",
+        "textAlignment": "PKTextAlignmentCenter",
+        "key": "gate",
+        "changeMessage": "Tu transporte cambió de andén"
+      },
+      {
+        "value": "2024-04-04T13:00-06:00",
+        "label": "Fecha y Hora",
+        "textAlignment": "PKTextAlignmentCenter",
+        "key": "dateTime",
+        "dateStyle": "PKDateStyleShort",
+        "timeStyle": "PKDateStyleShort"
+      },
+      {
+        "value": "Completo",
+        "label": "Categoría",
+        "key": "category"
+      }
+    ],
+    "backFields": [
+      {
+        "value": "123567",
+        "label": "Token de Facturación",
+        "key": "billingToken"
+      },
+      {
+        "value": "12357875",
+        "label": "Número de Operación",
+        "key": "operationNumber"
+      },
+      {
+        "value": "403",
+        "label": "Total del Pago",
+        "key": "totalPayment"
+      },
+      {
+        "value": "Tarjeta de Crédito",
+        "label": "Método de Pago",
+        "key": "paymentMethod"
+      }
+    ]
+  },
+  "logo": {
+    "kind": "walletobjects#image",
+    "sourceUri": {
+      "uri": "https://tu-servidor.com/logo-flecha-amarilla.png",
+      "description": "Flecha Amarilla Logo"
+    }
+  },
+  "eventTicketClass": {
+    "eventName": {
+      "defaultValue": {
+        "language": "es",
+        "value": "Viaje Guadalajara a Salamanca"
+      }
+    }
+  },
+  "purchaseDetails": {
+    "purchaseDateTime": "2024-03-06T21:30:00Z",
+    "purchaseReceiptNumber": "7684781"
+  },
+  "totalPrice": {
+    "kind": "walletobjects#money",
+    "micros": 470000000,
+    "currencyCode": "MXN"
+  }
+}
